@@ -1,0 +1,22 @@
+name: SkyX
+version: '1.0.0'
+main: cn.onea.skyX.SkyX
+api-version: '1.8.8'
+authors: [ onea ]
+depend: [packetevents]
+description: SkyX Anticheat, A minecraft anticheat.
+
+commands:
+  skyx:
+    description: Main command for SkyX AntiCheat
+    usage: /skyx [subcommand]
+    permission: skyx.command
+    permission-message: "&c你没有权限使用此命令!"
+
+permissions:
+  skyx.command:
+    description: Allow access to SkyX commands
+    default: op
+  skyx.debug:
+    description: Allow debugging commands
+    default: op

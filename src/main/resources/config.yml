@@ -1,0 +1,20 @@
+# SkyX 反作弊插件配置
+# 通用设置
+prefix: '&8[&cSkyX&8]'
+language: zh_CN
+
+# REACH
+reach:
+  enabled: true
+  max-reach: 3.3
+  check-delay-ticks: 2  # 检测延迟（tick）
+  vl-threshold: 10      # 违规阈值
+  ping-factor: 0.1      # 延迟补偿系数
+  vertical-speed-factor: 0.5 # 垂直速度补偿系数
+  max-additional-reach: 1.0 # 最大额外距离
+  kick-message: '&c[Skyx] ReachA (%distance%)' # %distance% 为检测到的距离 (必须使用 %distance% 占位符)
+
+# INVMOVE
+invmove:
+  enabled: true
+  kick-message: '&c[Skyx] InvMove (%reason%)' # %reason% 为检测到的原因 （必须使用 %reason% 占位符）
